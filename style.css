@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #DAFFFB;
+    text-align: center;
+    padding: 15px;
+    color: #12486B;
+}
+
+header nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: none;
+    justify-content: space-between;
+
+}
+
+main {
+
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #419197;
+}
+
+.search {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.search input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 14px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px #d1bdbd;
+}
+
+.search button {
+    background-color: #7a838d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.search button:hover {
+    background-color: #62686f;
+}
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 550px;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.result-item {
+
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.result-item:hover {
+    transform: scale(1.05);
+}
+
+.result-item h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.result-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5C8374;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.result-item .read-more-button:hover {
+    background-color: #3890b5;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .search {
+        text-align: center;
+    }
+
+    .search input[type="text"] {
+        max-width: 100%;
+    }
+}
