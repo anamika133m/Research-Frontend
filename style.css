@@ -49,13 +49,13 @@ main h1 {
     padding: 14px;
     /* border: 1px solid #ccc; */
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 6px;
     border: none;
     box-shadow: 2px 2px 2px 1px #d1bdbd;
 }
 
 .search button {
-    background-color: #7a838d;
+    background-color: #255c5c;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -66,7 +66,7 @@ main h1 {
 }
 
 .search button:hover {
-    background-color: #62686f;
+    background-color: #317d7d;
 }
 
 .search-results {
